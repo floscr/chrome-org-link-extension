@@ -1,0 +1,25 @@
+{
+   "name": "Copy Org Links",
+   "short_name": "Copy Org Links",
+   "description": "Added the missing hotkeys to control Chrome tabs. Now you can use shortcuts to close left/right/other tabs or toggle pinned ones",
+   "version": "0.3.0",
+   "manifest_version": 2,
+   "options_page": "options.html",
+   "permissions": [ "tabs" ],
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "icons": {
+      "128": "images/tabs_128.png",
+      "48": "images/tabs_48.png"
+   },
+   "commands": {
+      "copy-org-tab-link": {
+         "description": "Copy org tab link",
+         "suggested_key": {
+            "default": "Ctrl+Shift+C"
+         }
+      }
+   }
+}
